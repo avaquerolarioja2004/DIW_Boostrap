@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Productos</title>
     <link rel="stylesheet" href="../tools/css/bootstrap.min.css">
-    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
@@ -15,7 +14,6 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Marca</a>
-            <!-- Buscador -->
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
                 <button class="btn btn-outline-primary" type="submit">Buscar</button>
@@ -30,7 +28,7 @@
                         <a class="nav-link" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./login.html">Login</a>
+                        <a class="nav-link" href="#">Carrito</a>
                     </li>
                 </ul>
             </div>
@@ -50,17 +48,17 @@
                 <img src="../img/teclado.png" class="d-block w-100" alt="Teclado Gaming">
             </div>
             <div class="carousel-item">
-                <img src="../img/raton.png" class="d-block w-100" alt="Raton">
+                <img src="../img/raton.png" class="d-block w-100 rotate" alt="Ratón">
             </div>
         </div>
-        <!-- Botón Anterior con clase de Bootstrap para mejor contraste -->
-        <button class="carousel-control-prev btn btn-danger" type="button" data-bs-target="#carouselExampleIndicators"
+        <!-- Botón Anterior visible -->
+        <button class="carousel-control-prev btn btn-dark" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Anterior</span>
         </button>
-        <!-- Botón Siguiente con clase de Bootstrap para mejor contraste -->
-        <button class="carousel-control-next btn btn-danger" type="button" data-bs-target="#carouselExampleIndicators"
+        <!-- Botón Siguiente visible -->
+        <button class="carousel-control-next btn btn-dark" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Siguiente</span>
@@ -71,7 +69,9 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-6 col-md-3 text-center mb-4">
-                <a href="./infoProducto.html"><img src="../img/iphone.jpg" class="img-fluid" alt="iPhone 16 Pro"></a>
+                <a href="./infoProducto.html">
+                    <img src="../img/iphone.jpg" class="img-fluid" alt="iPhone 16 Pro">
+                </a>
                 <h6>iPhone 16 Pro</h6>
                 <p class="text-primary">12.345€</p>
             </div>
