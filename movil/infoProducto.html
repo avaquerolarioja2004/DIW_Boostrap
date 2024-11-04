@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone 16 PRO</title>
+  <link rel="stylesheet" href="../tools/css/bootstrap.min.css">
+  <link rel="stylesheet" href="cssMain.css">
+  <style>
+    .navbar { background-color: #f8f9fa; }
+    .navbar-brand img { height: 24px; }
+    .form-control { max-width: 200px; }
+    .btn-cart, .btn-user { background-color: #e0e0e0; color: #333; border: none; }
+    .btn-cart:hover, .btn-user:hover { background-color: #d0d0d0; }
+
+    .product-container { max-width: 400px; margin: 0 auto; }
+    .product-image { max-width: 200px; }
+    .product-title { font-size: 1.8rem; }
+    .price { font-size: 1.5rem; font-weight: bold; }
+    .btn-add { width: 100px; background-color: #e0e0e0; color: #333; }
+    .btn-add:hover { background-color: #d0d0d0; }
+    .btn-buy { width: 100px; }
+  </style>
+</head>
+<body>
+<script src="../tools/js/bootstrap.bundle.min.js"></script>
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+      <img src="../img/teleCarrito.png" alt="Logo">
+    </a>
+      <form class="d-flex ms-auto">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      </form>
+      <button class="btn btn-cart ms-2"><i class="bi bi-cart"></i></button>
+      <button class="btn btn-user ms-2"><i class="bi bi-person"></i></button>
+    
+  </div>
+</nav>
+
+<!-- Contenedor principal -->
+<div class="container product-container text-center my-4">
+  <!-- Imagen del Producto -->
+  <img src="../img/iphone.jpg" alt="iPhone 16 PRO" class="product-image img-fluid mb-4">
+  
+  <!-- Nombre del Producto -->
+  <h2 class="product-title fw-bold">iPhone 16 PRO</h2>
+
+  <!-- Opciones de Almacenamiento y Memoria RAM -->
+  <div class="row mb-3">
+    <div class="col-6">
+      <h6>Almacenamiento</h6>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="almacenamiento" id="512GB" checked>
+        <label class="form-check-label" for="512GB">512 GB</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="almacenamiento" id="1TB">
+        <label class="form-check-label" for="1TB">1 TB</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="almacenamiento" id="2TB">
+        <label class="form-check-label" for="2TB">2 TB</label>
+      </div>
+    </div>
+    <div class="col-6">
+      <h6>Memoria RAM</h6>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="ram" id="32GB" checked>
+        <label class="form-check-label" for="32GB">32 GB</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="ram" id="64GB">
+        <label class="form-check-label" for="64GB">64 GB</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Precio -->
+  <h3 class="price">1.600€</h3>
+
+  <!-- Botones -->
+  <div class="d-flex justify-content-center mt-3">
+    <button class="btn btn-add me-2">Añadir</button>
+    <button class="btn btn-primary btn-buy">Comprar</button>
+  </div>
+</div>
+</body>
+</html>
+
