@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesión - TopTech</title>
     <link rel="stylesheet" href="../tools/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./cssAjustable.css">
     <style>
         .login-container {
-            max-width: 400px;
-            margin-top: 100px;
+            max-width: 900px;
+            margin-top: 50px;
         }
         .login-logo img {
-            width: 100px;
+            width: 80px;
             margin-bottom: 20px;
         }
         .login-btn {
@@ -23,25 +22,35 @@
 <body>
 
 <div class="container d-flex justify-content-center align-items-center vh-100">
-    <div class="login-container text-center">
-        <a href="#" class="text-decoration-none text-black-50 mb-3 d-inline-block">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zM3.904 7.496a.5.5 0 0 1 .11-.637l.91-.91a.5.5 0 0 1 .707.707l-.707.707H10.5a.5.5 0 0 1 0 1H4.924l.707.707a.5.5 0 0 1-.707.707l-.91-.91a.5.5 0 0 1-.11-.637z"/>
-            </svg>
-        </a>
-        <h1 class="mb-4">TopTech</h1>
-        <div class="login-photo">
-            <img src="../img/teleCarrito.png" alt="Logo de TopTech" class="mb-3">
+    <div class="login-container row g-0 shadow-lg">
+        <!-- Columna izquierda con el logo e imagen de carrito, solo visible en escritorio -->
+        <div class="col-md-6 d-none d-md-flex flex-column align-items-center justify-content-center text-center bg-light">
+            <div class="login-logo">
+                <img src="../img/logo.png" alt="Logo de TopTech">
+            </div>
+            <img src="../img/teleCarrito.png" alt="Carrito en pantalla" class="img-fluid mb-3">
+            <p><strong>Inicia Sesión para una mejor experiencia</strong></p>
         </div>
-        <form>
-            <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Usuario" required>
+        
+        <!-- Columna del formulario, que ocupa toda la pantalla en dispositivos móviles -->
+        <div class="col-12 col-md-6 p-4">
+            <div class="text-center d-md-none mb-3">
+                <!-- Logo y mensaje, solo visibles en móvil -->
+                <img src="../img/teleCarrito.png" alt="Logo de TopTech" class="mb-2">
+                <p><strong>Inicia Sesión para una mejor experiencia</strong></p>
             </div>
-            <div class="mb-3">
-                <input type="password" class="form-control" placeholder="Contraseña" required>
-            </div>
-            <button type="submit" class="btn btn-primary login-btn">Iniciar sesión</button>
-        </form>
+            <form>
+                <div class="mb-3">
+                    <label for="usuario" class="form-label"><strong>Usuario</strong></label>
+                    <input type="text" id="usuario" class="form-control" placeholder="Usuario" required>
+                </div>
+                <div class="mb-3">
+                    <label for="contrasena" class="form-label"><strong>Contraseña</strong></label>
+                    <input type="password" id="contrasena" class="form-control" placeholder="Contraseña" required>
+                </div>
+                <button type="submit" class="btn btn-primary login-btn">Iniciar sesión</button>
+            </form>
+        </div>
     </div>
 </div>
 
