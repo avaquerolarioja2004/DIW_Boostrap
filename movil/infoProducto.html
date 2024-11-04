@@ -5,28 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iPhone 16 PRO</title>
   <link rel="stylesheet" href="../tools/css/bootstrap.min.css">
-  <link rel="stylesheet" href="cssMain.css">
-  <style>
-    .navbar { background-color: #f8f9fa; }
-    .navbar-brand img { height: 24px; }
-    .form-control { max-width: 200px; }
-    .btn-cart, .btn-user { background-color: #e0e0e0; color: #333; border: none; }
-    .btn-cart:hover, .btn-user:hover { background-color: #d0d0d0; }
-
-    .product-container { max-width: 400px; margin: 0 auto; }
-    .product-image { max-width: 200px; }
-    .product-title { font-size: 1.8rem; }
-    .price { font-size: 1.5rem; font-weight: bold; }
-    .btn-add { width: 100px; background-color: #e0e0e0; color: #333; }
-    .btn-add:hover { background-color: #d0d0d0; }
-    .btn-buy { width: 100px; }
-  </style>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 <script src="../tools/js/bootstrap.bundle.min.js"></script>
 <!-- Barra de navegación -->
 <nav class="navbar navbar-expand-lg navbar-light">
-  <div class="container-fluid">
+  <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -36,9 +21,13 @@
       <form class="d-flex ms-auto">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
       </form>
-      <button class="btn btn-cart ms-2"><i class="bi bi-cart"></i></button>
-      <button class="btn btn-user ms-2"><i class="bi bi-person"></i></button>
-    
+      <a class="navbar-brand" href="#">
+        <img src="../img/cesta.png" alt="Cesta">
+      </a>
+      <a class="navbar-brand" href="#">
+        <img src="../img/perfil.png" alt="Perfil">
+      </a>
+          
   </div>
 </nav>
 

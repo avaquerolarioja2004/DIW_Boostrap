@@ -1,0 +1,12 @@
+.navbar { background-color: #f8f9fa; }
+.navbar-brand img { height: 24px; }
+.form-control { max-width: 200px; }
+.btn-cart, .btn-user { background-color: #e0e0e0; color: #333; border: none; }
+.btn-cart:hover, .btn-user:hover { background-color: #d0d0d0; }
+.product-container { max-width: 400px; margin: 0 auto; }
+.product-image { max-width: 200px; }
+.product-title { font-size: 1.8rem; }
+.price { font-size: 1.5rem; font-weight: bold; }
+.btn-add { width: 100px; background-color: #e0e0e0; color: #333; }
+.btn-add:hover { background-color: #d0d0d0; }
+.btn-buy { width: 100px; }
