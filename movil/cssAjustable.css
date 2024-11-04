@@ -1,9 +1,3 @@
-@media (min-width: 260px) and (max-width: 768px) {
-    main {
-        background-color: #f8f9fa;
-    }
-}
-
 @media (min-width: 769px) {
     main {
         background-color: #ffffff; 
