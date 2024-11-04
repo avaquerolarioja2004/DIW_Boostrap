@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión - TopTech</title>
+    <link rel="stylesheet" href="../tools/css/bootstrap.min.css">
+    <style>
+        .login-container {
+            max-width: 400px;
+            margin-top: 100px;
+        }
+        .login-logo img {
+            width: 100px;
+            margin-bottom: 20px;
+        }
+        .login-btn {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="login-container text-center">
+        <a href="#" class="text-decoration-none text-black-50 mb-3 d-inline-block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zM3.904 7.496a.5.5 0 0 1 .11-.637l.91-.91a.5.5 0 0 1 .707.707l-.707.707H10.5a.5.5 0 0 1 0 1H4.924l.707.707a.5.5 0 0 1-.707.707l-.91-.91a.5.5 0 0 1-.11-.637z"/>
+            </svg>
+        </a>
+        <h1 class="mb-4">TopTech</h1>
+        <div class="login-logo">
+            <img src="https://via.placeholder.com/100" alt="Logo de TopTech" class="mb-3">
+        </div>
+        <form>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Usuario" required>
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="btn btn-primary login-btn">Iniciar sesión</button>
+        </form>
+    </div>
+</div>
+
+<script src="../tools/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
