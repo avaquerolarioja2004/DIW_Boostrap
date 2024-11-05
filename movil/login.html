@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de sesión - TopTech</title>
     <link rel="stylesheet" href="../tools/css/bootstrap.min.css">
     <style>
-        /* General container styling */
         .login-container {
-            max-width: 1100px; /* Set max-width to make it larger on desktops */
+            max-width: 1100px;
             margin-top: 50px;
         }
 
-        /* Larger logo */
         .login-logo img {
-            width: 120px; /* Larger logo size */
+            width: 120px;
             margin-bottom: 20px;
         }
     </style>
 </head>
+
 <body>
 
-<div class="container d-flex justify-content-center align-items-center vh-100">
-    <div class="login-container row g-0 shadow-lg">
-        <!-- Left column with logo and image, visible only on desktop -->
-        <div class="col-md-6 d-none d-md-flex flex-column align-items-center justify-content-center text-center bg-light p-5">
-            <div class="login-logo">
-                <img src="../img/logo.png" alt="Logo de TopTech" class="img-fluid">
-            </div>
-            <img src="../img/teleCarrito.png" alt="Carrito en pantalla" class="img-fluid mb-3">
-            <p class="fs-4"><strong>Inicia Sesión para una mejor experiencia</strong></p> <!-- Larger text size -->
-        </div>
-        
-        <!-- Form column, full width on mobile screens -->
-        <div class="col-12 col-md-6 p-5">
-            <div class="text-center d-md-none mb-4">
-                <!-- Logo and message, only visible on mobile -->
-                <img src="../img/teleCarrito.png" alt="Logo de TopTech" class="img-fluid mb-3">
-                <p class="fs-5"><strong>Inicia Sesión para una mejor experiencia</strong></p> <!-- Larger text for mobile -->
-            </div>
-            <form>
-                <div class="mb-4">
-                    <label for="usuario" class="form-label fs-5"><strong>Usuario</strong></label> <!-- Larger label text -->
-                    <input type="text" id="usuario" class="form-control form-control-lg" placeholder="Usuario" required>
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="login-container row g-0 shadow-lg">
+
+            <div
+                class="col-md-6 d-none d-md-flex flex-column align-items-center justify-content-center text-center bg-light p-5">
+                <div class="login-logo">
+                    <img src="../img/logo.png" alt="Logo de TopTech" class="img-fluid">
                 </div>
-                <div class="mb-4">
-                    <label for="contrasena" class="form-label fs-5"><strong>Contraseña</strong></label> <!-- Larger label text -->
-                    <input type="password" id="contrasena" class="form-control form-control-lg" placeholder="Contraseña" required>
+                <img src="../img/teleCarrito.png" alt="Carrito en pantalla" class="img-fluid mb-3">
+                <p class="fs-4"><strong>Inicia Sesión para una mejor experiencia</strong></p> <!-- Larger text size -->
+            </div>
+
+
+            <div class="col-12 col-md-6 p-5">
+                <div class="text-center d-md-none mb-4">
+                    <img src="../img/teleCarrito.png" alt="Logo de TopTech" class="img-fluid mb-3">
+                    <p class="fs-5"><strong>Inicia Sesión para una mejor experiencia</strong></p>
+                    <!-- Larger text for mobile -->
                 </div>
-                <button type="submit" class="btn btn-primary btn-lg w-100">Iniciar sesión</button> <!-- Larger button -->
-            </form>
+                <form>
+                    <div class="mb-4">
+                        <label for="usuario" class="form-label fs-5"><strong>Usuario</strong></label>
+                        <!-- Larger label text -->
+                        <input type="text" id="usuario" class="form-control form-control-lg" placeholder="Usuario"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="contrasena" class="form-label fs-5"><strong>Contraseña</strong></label>
+                        <!-- Larger label text -->
+                        <input type="password" id="contrasena" class="form-control form-control-lg"
+                            placeholder="Contraseña" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Iniciar sesión</button>
+                    <!-- Larger button -->
+                </form>
+            </div>
         </div>
     </div>
-</div>
 
-<script src="../tools/js/bootstrap.bundle.min.js"></script>
+    <script src="../tools/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
