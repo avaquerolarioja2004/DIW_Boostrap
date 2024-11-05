@@ -11,29 +11,42 @@
 
 <body>
     <!-- Barra de Navegación -->
+    <!-- Barra de Navegación -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+        <div class="container-fluid d-flex align-items-center">
             <a class="navbar-brand" href="#">Marca</a>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                <button class="btn btn-outline-primary" type="submit">Buscar</button>
-            </form>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Carrito</a>
-                    </li>
-                </ul>
+            <form class="d-flex me-2 flex-grow-1">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-primary" type="submit">Buscar</button>
+            </form>
+            <div class="d-flex align-items-center">
+                <!-- Icono de carrito -->
+                <a href="#" class="me-3">
+                    <img src="../img/carrito.png" alt="Carrito" style="width: 30px; height: auto;">
+                </a>
+                <!-- Icono de usuario -->
+                <a href="./login.html">
+                    <img src="../img/usuario.png" alt="Usuario" style="width: 30px; height: auto;">
+                </a>
             </div>
         </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Carrito</a>
+                </li>
+            </ul>
+        </div>
     </nav>
+
+
 
     <!-- Carrusel de Productos -->
     <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
@@ -48,16 +61,16 @@
                 <img src="../img/teclado.png" class="d-block w-100" alt="Teclado Gaming">
             </div>
             <div class="carousel-item">
-                <img src="../img/raton.png" class="d-block w-100 rotate" alt="Ratón">
+                <img src="../img/raton.png" class="d-block w-75 mx-auto" alt="Ratón">
             </div>
         </div>
-        <!-- Botón Anterior visible -->
+        <!--Botón Anterior-->
         <button class="carousel-control-prev btn btn-dark" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Anterior</span>
         </button>
-        <!-- Botón Siguiente visible -->
+        <!--Botón Siguiente-->
         <button class="carousel-control-next btn btn-dark" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -73,22 +86,22 @@
                     <img src="../img/iphone.jpg" class="img-fluid" alt="iPhone 16 Pro">
                 </a>
                 <h6>iPhone 16 Pro</h6>
-                <p class="text-primary">12.345€</p>
+                <p class="text-primary">1.345€</p>
             </div>
             <div class="col-6 col-md-3 text-center mb-4">
                 <img src="../img/pc.png" class="img-fluid" alt="PC Intel i7">
                 <h6>Intel i7 16GB 4090...</h6>
-                <p class="text-primary">4.321€</p>
+                <p class="text-primary">1.321€</p>
             </div>
             <div class="col-6 col-md-3 text-center mb-4">
                 <img src="../img/teclado.png" class="img-fluid" alt="Teclado Gaming">
                 <h6>Teclado Gaming</h6>
-                <p class="text-primary">145€</p>
+                <p class="text-primary">45€</p>
             </div>
             <div class="col-6 col-md-3 text-center mb-4">
                 <img src="../img/raton.png" class="img-fluid" alt="Logitech G Superlight">
                 <h6>Logitech G Superlight</h6>
-                <p class="text-primary">321€</p>
+                <p class="text-primary">81€</p>
             </div>
         </div>
     </div>
