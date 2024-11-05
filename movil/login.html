@@ -6,16 +6,16 @@
     <title>Inicio de sesión - TopTech</title>
     <link rel="stylesheet" href="../tools/css/bootstrap.min.css">
     <style>
+        /* General container styling */
         .login-container {
-            max-width: 900px;
+            max-width: 1100px; /* Set max-width to make it larger on desktops */
             margin-top: 50px;
         }
+
+        /* Larger logo */
         .login-logo img {
-            width: 80px;
+            width: 120px; /* Larger logo size */
             margin-bottom: 20px;
-        }
-        .login-btn {
-            width: 100%;
         }
     </style>
 </head>
@@ -23,31 +23,41 @@
 
 <div class="container justify-content-center align-items-center vh-100">
     <div class="login-container row g-0 shadow-lg">
-        <!-- Columna izquierda con el logo e imagen de carrito, solo visible en escritorio -->
-        <div class="col-md-6 d-none d-md-flex flex-column align-items-center justify-content-center text-center bg-light">
+        <!-- Left column with logo and image, visible only on desktop -->
+        <div class="col-md-6 d-none d-md-flex flex-column align-items-center justify-content-center text-center bg-light p-5">
             <div class="login-logo">
-                <img src="../img/logo.png" alt="Logo de TopTech">
+                <img src="../img/logo.png" alt="Logo de TopTech" class="img-fluid">
             </div>
             <img src="../img/teleCarrito.png" alt="Carrito en pantalla" class="img-fluid mb-3">
-            <p><strong>Inicia Sesión para una mejor experiencia</strong></p>
+            <p class="fs-4"><strong>Inicia Sesión para una mejor experiencia</strong></p> <!-- Larger text size -->
         </div>
+<<<<<<< HEAD
+        
+        <!-- Form column, full width on mobile screens -->
+        <div class="col-12 col-md-6 p-5">
+            <div class="text-center d-md-none mb-4">
+                <!-- Logo and message, only visible on mobile -->
+                <img src="../img/teleCarrito.png" alt="Logo de TopTech" class="img-fluid mb-3">
+                <p class="fs-5"><strong>Inicia Sesión para una mejor experiencia</strong></p> <!-- Larger text for mobile -->
+=======
         <!-- Columna del formulario, que ocupa toda la pantalla en dispositivos móviles -->
         <div class="col-12 col-md-6 p-4">
             <div class="text-center d-md-none mb-3">
                 <!-- Logo y mensaje, solo visibles en móvil -->
                 <img src="../img/teleCarrito.png" alt="Logo de TopTech" class="mb-2">
                 <p><strong>Inicia Sesión para una mejor experiencia</strong></p>
+>>>>>>> 80fab4d0f805a957ef75db61e42a2348abca8df2
             </div>
             <form>
-                <div class="mb-3">
-                    <label for="usuario" class="form-label"><strong>Usuario</strong></label>
-                    <input type="text" id="usuario" class="form-control" placeholder="Usuario" required>
+                <div class="mb-4">
+                    <label for="usuario" class="form-label fs-5"><strong>Usuario</strong></label> <!-- Larger label text -->
+                    <input type="text" id="usuario" class="form-control form-control-lg" placeholder="Usuario" required>
                 </div>
-                <div class="mb-3">
-                    <label for="contrasena" class="form-label"><strong>Contraseña</strong></label>
-                    <input type="password" id="contrasena" class="form-control" placeholder="Contraseña" required>
+                <div class="mb-4">
+                    <label for="contrasena" class="form-label fs-5"><strong>Contraseña</strong></label> <!-- Larger label text -->
+                    <input type="password" id="contrasena" class="form-control form-control-lg" placeholder="Contraseña" required>
                 </div>
-                <button type="submit" class="btn btn-primary login-btn">Iniciar sesión</button>
+                <button type="submit" class="btn btn-primary btn-lg w-100">Iniciar sesión</button> <!-- Larger button -->
             </form>
         </div>
     </div>
