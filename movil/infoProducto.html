@@ -10,23 +10,26 @@
 <body>
 <script src="../tools/js/bootstrap.bundle.min.js"></script>
 <!-- Barra de navegación -->
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-xl">
   <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="#">
-      <img src="../img/teleCarrito.png" alt="Logo">
+      <img src="../img/logo.png" alt="Logo">
     </a>
-      <form class="d-flex ms-auto">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <form class="form-inline">
+        <input type="search" class="form-control form-control-lg" id="search" aria-describedby="search" placeholder="search">
       </form>
-      <a class="navbar-brand" href="#">
-        <img src="../img/cesta.png" alt="Cesta">
-      </a>
-      <a class="navbar-brand" href="#">
-        <img src="../img/perfil.png" alt="Perfil">
-      </a>
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="../img/cesta.png" width="30" height="30" alt="cesta">
+        </a>
+        <a class="navbar-brand" href="login.html">
+          <img src="../img/perfil.png" width="30" height="30" alt="Perfil">
+        </a>
+      </nav>
+      
           
   </div>
 </nav>
