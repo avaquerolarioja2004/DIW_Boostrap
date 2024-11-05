@@ -11,26 +11,27 @@
 
 <body>
     <!-- Barra de Navegación -->
-    <!-- Barra de Navegación -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid d-flex align-items-center">
-            <a class="navbar-brand" href="#">Marca</a>
+            <a class="navbar-brand" href="main.html">
+                <img src="../img/logo.png" alt="logo" class="img-fluid w-25">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <form class="d-flex me-2 flex-grow-1">
+            <form class="d-flex me-3 flex-grow-1">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
                 <button class="btn btn-outline-primary" type="submit">Buscar</button>
             </form>
             <div class="d-flex align-items-center">
                 <!-- Icono de carrito -->
                 <a href="#" class="me-3">
-                    <img src="../img/carrito.png" alt="Carrito" style="width: 30px; height: auto;">
+                    <img src="../img/cesta.png" alt="Carrito" style="width: 30px; height: auto;">
                 </a>
                 <!-- Icono de usuario -->
-                <a href="./login.html">
-                    <img src="../img/usuario.png" alt="Usuario" style="width: 30px; height: auto;">
+                <a href="./login.html" class="me-3">
+                    <img src="../img/perfil.png" alt="Usuario" style="width: 30px; height: auto;">
                 </a>
             </div>
         </div>
@@ -45,8 +46,6 @@
             </ul>
         </div>
     </nav>
-
-
 
     <!-- Carrusel de Productos -->
     <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
