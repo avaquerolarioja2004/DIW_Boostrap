@@ -13,17 +13,10 @@
     <!-- Barra de Navegación -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid d-flex align-items-center">
-            <a class="navbar-brand" href="main.html">
+            <a class="navbar-brand d-flex align-items-center" href="main.html">
                 <img src="../img/logo.png" alt="logo" class="img-fluid w-25">
+                <p>TopTech</p>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <form class="d-flex me-3 flex-grow-1">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                <button class="btn btn-outline-primary" type="submit">Buscar</button>
-            </form>
             <div class="d-flex align-items-center">
                 <!-- Icono de carrito -->
                 <a href="#" class="me-3">
@@ -34,14 +27,27 @@
                     <img src="../img/perfil.png" alt="Usuario" style="width: 30px; height: auto;">
                 </a>
             </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="d-flex me-3 flex-grow-1">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            </form>
         </div>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Inicio</a>
+                    <a class="nav-link" href="#">Portátiles</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Carrito</a>
+                    <a class="nav-link" href="#">Móviles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tablets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Periféricos</a>
                 </li>
             </ul>
         </div>
@@ -63,13 +69,13 @@
                 <img src="../img/raton.png" class="d-block w-75 mx-auto" alt="Ratón">
             </div>
         </div>
-        <!--Botón Anterior-->
+
         <button class="carousel-control-prev btn btn-dark" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Anterior</span>
         </button>
-        <!--Botón Siguiente-->
+
         <button class="carousel-control-next btn btn-dark" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -104,6 +110,11 @@
             </div>
         </div>
     </div>
+
+    <footer>
+
+    </footer>
+
     <script src="../tools/js/bootstrap.bundle.min.js"></script>
 </body>
 
