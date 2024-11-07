@@ -1,9 +1,9 @@
-#boton{
-    background-color: #1e96d4;
-    color: #0c1134;
+button{
+    background-color: #1e96d4!important;
+    color: #0c1134!important;
 }
 *{
-    color:#0c1134;
+    color: #0c1134 !important;;
 }
 #login{
     background-color: rgba(12, 17, 52, 0.3);
