@@ -5,64 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>iPhone 16 PRO</title>
   <link rel="stylesheet" href="../tools/css/bootstrap.min.css">
-  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 <script src="../tools/js/bootstrap.bundle.min.js"></script>
 
-<!-- Barra de navegación -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <!-- Logo -->
-    <a class="navbar-brand" href="main.html">
-      <img src="../img/logo.png" alt="Logo">
-    </a>
-    
-    <!-- Botón de colapso para móviles -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <!-- Contenido de la barra de navegación -->
-    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-      
-      <!-- Barra de búsqueda centrada -->
-      <form class="d-flex search-form mx-auto">
-        <input class="form-control search-input" type="search" placeholder="Buscar" aria-label="Buscar">
-        <button class="btn btn-outline-primary search-btn" type="submit">Buscar</button>
+  <div class="container-fluid d-flex align-items-center">
+      <a class="navbar-brand d-flex align-items-center" href="main.html">
+          <img src="../img/logo.png" alt="logo" class="img-fluid w-25 mx-1">
+          <p>opTech</p>
+      </a>
+      <form class="d-flex me-3 flex-grow-1">
+          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
       </form>
-      
-      <!-- Iconos de carrito y perfil alineados a la derecha -->
-      <div class="navbar-icons d-flex align-items-center">
-        <a href="#" class="me-2">
-          <img src="../img/cesta.png" alt="Carrito">
+      <div class="d-flex align-items-center">
+        <a href="#" class="me-3">
+            <img src="../img/cesta.png" alt="Carrito" style="width: 30px; height: auto;">
         </a>
-        <a href="./login.html">
-          <img src="../img/perfil.png" alt="Usuario">
+        <a href="./login.html" class="me-3">
+            <img src="../img/perfil.png" alt="Usuario" style="width: 30px; height: auto;">
         </a>
-      </div>
     </div>
   </div>
+  <div class="dropdown me-3">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+        Categorías
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">Móviles</a></li>
+        <li><a class="dropdown-item" href="#">Portátiles</a></li>
+        <li><a class="dropdown-item" href="#">Tablets</a></li>
+        <li><a class="dropdown-item" href="#">Periféricos</a></li>
+    </ul>
+</div>
 </nav>
 
-<!-- Contenedor principal -->
 <div class="container my-4">
   <div class="row align-items-center">
-    <!-- Imagen del Producto -->
     <div class="col-12 col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
       <img src="../img/iphone.jpg" alt="iPhone 16 PRO" class="img-fluid">
     </div>
 
-    <!-- Detalles del Producto -->
     <div class="col-12 col-lg-6">
       <h2 class="product-title fw-bold text-center text-lg-start">iPhone 16 PRO</h2>
 
-      <!-- Descripción del Producto -->
       <p class="product-description text-center text-lg-start">
         Descubre el iPhone 16 PRO: con una pantalla de alta resolución y una experiencia fotográfica avanzada. Equipado con el chip más rápido hasta la fecha y una batería que dura todo el día, este dispositivo redefine la potencia y la eficiencia. Sus materiales de alta calidad y diseño refinado ofrecen la máxima durabilidad y elegancia. Disponible en varios colores y opciones de almacenamiento, este iPhone lleva el rendimiento a otro nivel.
       </p>
 
-      <!-- Opciones de Almacenamiento y Memoria RAM -->
       <div class="row mb-3">
         <div class="col-6">
           <h6>Almacenamiento</h6>
@@ -92,10 +82,8 @@
         </div>
       </div>
 
-      <!-- Precio -->
       <h3 class="price text-center text-lg-start">1.600€</h3>
 
-      <!-- Botones -->
       <div class="d-flex justify-content-center justify-content-lg-start mt-3">
         <button class="btn btn-add me-2">Añadir</button>
         <button class="btn btn-primary btn-buy">Comprar</button>
