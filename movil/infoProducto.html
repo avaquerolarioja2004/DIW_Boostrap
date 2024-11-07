@@ -11,14 +11,14 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid d-flex align-items-center">
-      <a class="navbar-brand d-flex align-items-center" href="main.html">
-          <img src="../img/logo.png" alt="logo" class="img-fluid w-25 mx-1">
+      <a class="navbar-brand d-flex align-items-center " href="main.html">
+          <img src="../img/logo.png" alt="logo" class="img-fluid w-25">
           <p>opTech</p>
       </a>
       <form class="d-flex me-3 flex-grow-1">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
       </form>
-      <div class="d-flex align-items-center">
+      <div class="d-flex align-items-center w-27">
         <a href="#" class="me-3">
             <img src="../img/cesta.png" alt="Carrito" style="width: 30px; height: auto;">
         </a>
@@ -49,9 +49,32 @@
     <div class="col-12 col-lg-6">
       <h2 class="product-title fw-bold text-center text-lg-start">iPhone 16 PRO</h2>
 
-      <p class="product-description text-center text-lg-start">
-        Descubre el iPhone 16 PRO: con una pantalla de alta resolución y una experiencia fotográfica avanzada. Equipado con el chip más rápido hasta la fecha y una batería que dura todo el día, este dispositivo redefine la potencia y la eficiencia. Sus materiales de alta calidad y diseño refinado ofrecen la máxima durabilidad y elegancia. Disponible en varios colores y opciones de almacenamiento, este iPhone lleva el rendimiento a otro nivel.
-      </p>
+      <div class="row my-4">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Cámara Avanzada</h5>
+              <p class="card-text">Captura fotos impresionantes con su cámara de última generación.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Rendimiento Superior</h5>
+              <p class="card-text">Equipado con el chip más rápido hasta la fecha.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Duración de Batería</h5>
+              <p class="card-text">Batería que dura todo el día para un uso ininterrumpido.</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="row mb-3">
         <div class="col-6">
@@ -81,14 +104,59 @@
           </div>
         </div>
       </div>
+      
 
-      <h3 class="price text-center text-lg-start">1.600€</h3>
+      <h3 class="price text-lg-start">1.600€</h3>
 
       <div class="d-flex justify-content-center justify-content-lg-start mt-3">
         <button class="btn btn-add me-2">Añadir</button>
         <button class="btn btn-primary btn-buy">Comprar</button>
       </div>
     </div>
+    
+    <div class="container my-4">
+      <h3 class="text-center mb-4">Opiniones de Clientes</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <blockquote class="blockquote text-center">
+                <p class="mb-4">El mejor iPhone que he tenido, ¡totalmente recomendable!</p>
+                <footer class="blockquote-footer">Juan Pérez <cite title="Source Title"> - 5 estrellas</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <blockquote class="blockquote text-center">
+                <p class="mb-4">Increíble rendimiento y calidad de cámara.</p>
+                <footer class="blockquote-footer">María López <cite title="Source Title"> - 4 estrellas</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+              <blockquote class="blockquote text-center">
+                <p class="mb-4">La duración de la batería es excepcional, dura todo el día.</p>
+                <footer class="blockquote-footer">Carlos García <cite title="Source Title"> - 5 estrellas</cite></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-2 my-2 bottom">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-1">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2023 Company, Inc</p>
+    </footer>
   </div>
 </div>
 </body>
