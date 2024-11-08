@@ -17,16 +17,6 @@
                 <img src="../img/logo.png" alt="logo" class="w-25">
                 <p>opTech</p>
             </a>
-            <div class="d-flex align-items-center">
-                <!-- Icono de carrito -->
-                <a href="#" class="me-3">
-                    <img src="../img/cesta.png" alt="Carrito" style="width: 30px; height: auto;">
-                </a>
-                <!-- Icono de usuario -->
-                <a href="./login.html" class="me-3">
-                    <img src="../img/perfil.png" alt="Usuario" style="width: 30px; height: auto;">
-                </a>
-            </div>
             <form class="d-flex me-3 flex-grow-1">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
             </form>
@@ -37,16 +27,26 @@
                 Categorías
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">Móviles</a></li>
+                <li><a class="dropdown-item" href="moviles.html">Móviles</a></li>
                 <li><a class="dropdown-item" href="#">Portátiles</a></li>
                 <li><a class="dropdown-item" href="#">Tablets</a></li>
                 <li><a class="dropdown-item" href="#">Periféricos</a></li>
             </ul>
         </div>
+        <div class="d-flex align-items-center">
+            <!-- Icono de carrito -->
+            <a href="#" class="me-3">
+                <img src="../img/cesta.png" alt="Carrito" style="width: 30px; height: auto;">
+            </a>
+            <!-- Icono de usuario -->
+            <a href="./login.html" class="me-3">
+                <img src="../img/perfil.png" alt="Usuario" style="width: 30px; height: auto;">
+            </a>
+        </div>
     </nav>
 
     <!-- Carrusel de Productos -->
-    <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide mt-4 " data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -54,27 +54,27 @@
                 aria-label="Slide 2"></button>
         </div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active h-75">
                 <div class="d-flex align-items-center justify-content-center flex-column">
                     <h3>Teclado Gaming</h3>
                     <img src="../img/teclado.png" class="w-50" alt="Teclado Gaming">
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item h-75">
                 <div class="d-flex align-items-center justify-content-center flex-column">
                     <h3>Ratón G502</h3>
-                    <img src="../img/raton.png" class="w-25" alt="Ratón">
+                    <img src="../img/raton.png" class="w-50" alt="Ratón">
                 </div>
             </div>
         </div>
 
-        <button class="carousel-control-prev btn btn-dark" type="button" data-bs-target="#carouselExampleIndicators"
+        <button class="carousel-control-prev btn" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Anterior</span>
         </button>
 
-        <button class="carousel-control-next btn btn-dark" type="button" data-bs-target="#carouselExampleIndicators"
+        <button class="carousel-control-next btn" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Siguiente</span>
@@ -109,12 +109,16 @@
         </div>
     </div>
 
-    <footer class="py-2 my-2 bottom mt-5 mb-0">
-        <ul class="nav justify-content-center border-bottom ">
-            <li class="nav-item"><a href="#" class="nav-link px-2">Inicio</a></li>
-            <li class="nav-item"><a href="faqs.html" class="nav-link px-2">FAQs</a></li>
-        </ul>
-        <p class="text-center">© 2023 TopTech SL.</p>
+    <footer class="py-2 my-2 bottom mt-5 <footer class=" py-2 my-2 bottom mt-5">
+        <div class="container text-center">
+            <p>&copy; 2023 TopTech. Todos los derechos reservados.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Inicio</a></li>
+                <li class="list-inline-item"><a href="#">Política de Privacidad</a></li>
+                <li class="list-inline-item"><a href="#">Términos de Servicio</a></li>
+                <li class="list-inline-item"><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </div>
     </footer>
 
     <script src="../tools/js/bootstrap.bundle.min.js"></script>
