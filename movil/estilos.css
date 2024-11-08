@@ -1,10 +1,10 @@
 button{
-    background-color: #1e96d4;
-    color: #0c1134;
+    background-color: #1e96d4 !important;
+    color: #0c1134 !important;
 }
 
 *{
-    color:#0c1134;
+    color:#0c1134 !important;
 }
 
 #login{
