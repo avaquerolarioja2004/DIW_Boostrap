@@ -1,14 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión - TopTech</title>
     <link rel="stylesheet" href="../tools/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
-    
+
+<body id="login">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+        <div class="container-fluid d-flex align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="main.html">
+                <img src="../img/logo.png" alt="logo" class="w-25">
+                <p>opTech</p>
+            </a>
+            <div class="d-flex align-items-center">
+                <!-- Icono de carrito -->
+                <a href="#" class="me-3">
+                    <img src="../img/cesta.png" alt="Carrito" style="width: 30px; height: auto;">
+                </a>
+                <!-- Icono de usuario -->
+                <a href="./login.html" class="me-3">
+                    <img src="../img/perfil.png" alt="Usuario" style="width: 30px; height: auto;">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div id="centro" class="login-container row g-0 shadow-lg">
+
+            <div
+                class="col-md-6 d-none d-md-flex flex-column align-items-center justify-content-center text-center bg-light p-5">
+                <div class="login-logo">
+                    <img src="../img/logo.png" alt="Logo de TopTech" class="img-fluid">
+                </div>
+                <img src="../img/teleCarrito.png" alt="Carrito en pantalla" class="img-fluid mb-3">
+                <p class="fs-4"><strong>Inicia Sesión para una mejor experiencia</strong></p>
+            </div>
+
+
+            <div class="col-12 col-md-6 p-5">
+                <div class="text-center d-md-none mb-4">
+                    <img src="../img/teleCarrito.png" alt="Logo de TopTech" class="img-fluid mb-3">
+                    <p class="fs-5" id="texto"><strong>Inicia Sesión para una mejor experiencia</strong></p>
+                </div>
+                <form>
+                    <div class="mb-4">
+                        <label for="usuario" id="usuario" class="form-label fs-5"><strong>Usuario</strong></label>
+                        <input type="text" id="usuario" class="form-control form-control-lg" placeholder="Usuario"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="contrasena" id="contraseña"
+                            class="form-label fs-5"><strong>Contraseña</strong></label>
+                        <input type="password" id="contrasena" class="form-control form-control-lg"
+                            placeholder="Contraseña" required>
+                    </div>
+                    <button type="submit" id="boton" class="btn btn-lg w-100">Iniciar sesión</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-2 my-2 bottom mt-5">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2">Inicio</a></li>
+            <li class="nav-item"><a href="faqs.html" class="nav-link px-2">FAQs</a></li>
+        </ul>
+        <p class="text-center">© 2023 Company, Inc</p>
+    </footer>
+
     <script src="../tools/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
