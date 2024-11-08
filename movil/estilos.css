@@ -1,5 +1,3 @@
-
-
 button{
     background-color: #1e96d4 !important;
     color: #0c1134 !important;
@@ -26,4 +24,10 @@ button{
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
 }
-
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+#login,#register {
+    min-height: 100vh;
+}
