@@ -106,7 +106,15 @@ a:hover {
     object-fit: contain; 
     width: 100%;
 }
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Asegúrate de que el card ocupe toda la altura disponible */
+}
 
+.card-body {
+    margin-top: auto; /* Esto empuja el card-body hacia abajo */
+}
 
 
 
