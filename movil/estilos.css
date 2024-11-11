@@ -33,6 +33,8 @@ header {
 
 .navbar .form-control {
     border-radius: 20px;
+    border: 1px solid #ddd;
+    padding-left: 35px;
 }
 
 .dropdown-menu {
@@ -109,11 +111,11 @@ a:hover {
 .card {
     display: flex;
     flex-direction: column;
-    height: 100%; /* Asegúrate de que el card ocupe toda la altura disponible */
+    height: 100%;
 }
 
 .card-body {
-    margin-top: auto; /* Esto empuja el card-body hacia abajo */
+    margin-top: auto;
 }
 
 
