@@ -12,10 +12,10 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid d-flex align-items-center">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="../img/logo.png" alt="logo" class="w-25">
-                <p>opTech</p>
+                <p class="mt-2">opTech</p>
             </a>
             <form class="d-flex me-3 flex-grow-1 mb-1">
                 <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
@@ -43,7 +43,7 @@
         </div>
     </nav>
 
-    <div id="carouselExampleIndicators" class="carousel slide mt-4 " data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide mt-4" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -64,13 +64,13 @@
                 </div>
             </div>
         </div>
-
+    
         <button class="carousel-control-prev btn" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Anterior</span>
         </button>
-
+    
         <button class="carousel-control-next btn" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -78,37 +78,54 @@
         </button>
     </div>
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-6 col-md-3 text-center mb-4 w-25">
-                <a href="./infoProducto.html">
-                    <img src="../img/iphone.jpg" class="img-fluid" alt="iPhone 16 Pro">
-                </a>
-                <h6>iPhone 16 Pro</h6>
-                <p class="text-primary">1.345€</p>
+    <div class="container mt-5 mobile">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+            <div class="col text-center">
+                <div class="card shadow-sm h-100">
+                    <a href="./infoProducto.html">
+                        <img src="../img/iphone.jpg" class="card-img-top" alt="iPhone 16 Pro">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">iPhone 16 Pro</h6>
+                        <p class="card-text text-muted">1.345€</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-6 col-md-3 text-center mb-4 w-25">
-                <img src="../img/pc.png" class="img-fluid" alt="PC Intel i7">
-                <h6>Intel i7 16GB 4090RTX</h6>
-                <p class="text-primary">1.321€</p>
+            <div class="col text-center">
+                <div class="card shadow-sm h-100">
+                    <img src="../img/pc.png" class="card-img-top" alt="PC Intel i7">
+                    <div class="card-body">
+                        <h6 class="card-title">Intel i7 16GB 4090RTX</h6>
+                        <p class="card-text text-muted">1.321€</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-6 col-md-3 text-center mb-4 w-25">
-                <img src="../img/teclado.png" class="img-fluid" alt="Teclado Gaming">
-                <h6>Teclado Gaming</h6>
-                <p class="text-primary">45€</p>
+            <div class="col text-center">
+                <div class="card shadow-sm h-100">
+                    <img src="../img/teclado.png" class="card-img-top" alt="Teclado Gaming">
+                    <div class="card-body">
+                        <h6 class="card-title">Teclado Gaming</h6>
+                        <p class="card-text text-muted">45€</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-6 col-md-3 text-center mb-4 w-25">
-                <img src="../img/raton.png" class="img-fluid" alt="Logitech G Superlight">
-                <h6>Logitech G Superlight</h6>
-                <p class="text-primary">81€</p>
+            <div class="col text-center">
+                <div class="card shadow-sm h-100">
+                    <img src="../img/raton.png" class="card-img-top" alt="Logitech G Superlight">
+                    <div class="card-body">
+                        <h6 class="card-title">Logitech G Superlight</h6>
+                        <p class="card-text text-muted">81€</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </div> 
 
-    <footer class="py-2 my-2 bottom mt-5 <footer class=" py-2 my-2 bottom mt-5">
+    <footer class="py-2 my-2 bottom mt-5 mb-0 mx-0">
         <div class="container text-center">
             <p>&copy; 2023 TopTech. Todos los derechos reservados.</p>
             <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Inicio</a></li>
                 <li class="list-inline-item"><a href="#">Política de Privacidad</a></li>
                 <li class="list-inline-item"><a href="#">Términos de Servicio</a></li>
                 <li class="list-inline-item"><a href="faqs.html">FAQs</a></li>
