@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-color: #007bff;
+    background-color: #1e96d4;
     padding: 10px 0;
 }
 
@@ -45,16 +45,16 @@ button {
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: #1e96d4;
     border: none;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #1e96d4;
 }
 
 a {
-    color: #007bff;
+    color: #1e96d4;
     text-decoration: none;
 }
 
@@ -100,6 +100,11 @@ a:hover {
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='black'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
 }
+.card-img-top {
+    width: 80%; /* Ajusta el porcentaje según lo que necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 0 auto; /* Centra la imagen */
+}
 
 .mobile .card-img-top {
     height: 400px;
@@ -120,7 +125,7 @@ a:hover {
 
 
 footer a {
-    color: #007bff;
+    color: #1e96d4;
 }
 
 footer a:hover {
