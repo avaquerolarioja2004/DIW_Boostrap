@@ -62,7 +62,7 @@ a:hover {
     text-decoration: underline;
 }
 
-#login, footer {
+#register,#login, footer {
     background-color: rgba(12, 17, 52, 0.3);
 }
 
