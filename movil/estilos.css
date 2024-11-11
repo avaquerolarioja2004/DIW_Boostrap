@@ -125,3 +125,20 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-title {
+    font-weight: bold;
+    color: #343a40;
+}
+
